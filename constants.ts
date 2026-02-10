@@ -1,0 +1,168 @@
+
+import { Product, Category } from './types';
+
+export const MOCK_PRODUCTS: Product[] = [
+  {
+    id: '1',
+    title: 'Smartwatch Ultra Pro Max 2025 - Conectividade Total Torres Edition',
+    price: 189.90,
+    originalPrice: 299.00,
+    installments: 12,
+    imageUrl: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80',
+    shipping: 'full',
+    rating: 4.8,
+    reviewsCount: 1240,
+    category: 'Tecnologia',
+    description: 'O relógio inteligente definitivo para o seu dia a dia. Monitore sua saúde, receba notificações e controle suas músicas com o estilo exclusivo Torres.',
+    seller: 'TechWorld Store'
+  },
+  {
+    id: '2',
+    title: 'Fone de Ouvido Noise Cancelling Bluetooth Wireless Deep Torres',
+    price: 349.00,
+    originalPrice: 450.00,
+    installments: 10,
+    imageUrl: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80',
+    shipping: 'free',
+    rating: 4.9,
+    reviewsCount: 856,
+    category: 'Áudio',
+    description: 'Mergulhe na sua música favorita sem distrações externas. Som cristalino e graves potentes com acabamento premium.',
+    seller: 'AudioMaster Torres'
+  },
+  {
+    id: '3',
+    title: 'Câmera Segurança Wi-Fi 360 Graus Full HD Noturna',
+    price: 124.50,
+    installments: 6,
+    imageUrl: 'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=600&q=80',
+    shipping: 'standard',
+    rating: 4.5,
+    reviewsCount: 432,
+    category: 'Casa',
+    description: 'Segurança total para sua residência ou escritório com visão noturna e detecção de movimento inteligente.',
+    seller: 'SafeHome Hub'
+  },
+  {
+    id: '4',
+    title: 'Mouse Gamer RGB 12000 DPI Programável Pro-Torres',
+    price: 89.90,
+    originalPrice: 159.00,
+    installments: 3,
+    imageUrl: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&q=80',
+    shipping: 'full',
+    rating: 4.7,
+    reviewsCount: 2100,
+    category: 'Gamer',
+    description: 'Precisão absoluta para suas partidas competitivas. Iluminação personalizável e pegada ergonômica.',
+    seller: 'GamerSpot Pro'
+  },
+  {
+    id: '5',
+    title: 'Mochila Impermeável Anti-Roubo com Entrada USB Navy',
+    price: 159.90,
+    installments: 10,
+    imageUrl: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80',
+    shipping: 'free',
+    rating: 4.6,
+    reviewsCount: 670,
+    category: 'Acessórios',
+    description: 'Viaje com segurança e estilo. Compartimentos inteligentes para seu notebook e pertences pessoais.',
+    seller: 'UrbanStyle'
+  },
+  {
+    id: '6',
+    title: 'Kit de Ferramentas Profissional 120 Peças Torres Steel',
+    price: 249.90,
+    originalPrice: 320.00,
+    installments: 12,
+    imageUrl: 'https://images.unsplash.com/photo-1581147036324-c17da41d19c1?w=600&q=80',
+    shipping: 'full',
+    rating: 4.8,
+    reviewsCount: 320,
+    category: 'Ferramentas',
+    description: 'Kit completo para reparos residenciais e profissionais. Durabilidade extrema e organização perfeita.',
+    seller: 'FixIt All'
+  },
+  {
+    id: '7',
+    title: 'Perfume Torres Ocean Eau de Parfum 100ml',
+    price: 199.90,
+    installments: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=80',
+    shipping: 'free',
+    rating: 4.9,
+    reviewsCount: 1500,
+    category: 'Beleza',
+    description: 'Fragrância refrescante e duradoura inspirada na brisa marinha. Elegância em cada borrifada.',
+    seller: 'Essence Torres'
+  },
+  {
+    id: '8',
+    title: 'Tênis Esportivo Nitro Max para Corrida Azul Royal',
+    price: 289.90,
+    originalPrice: 399.00,
+    installments: 10,
+    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80',
+    shipping: 'full',
+    rating: 4.7,
+    reviewsCount: 890,
+    category: 'Moda',
+    description: 'Amortecimento de alta tecnologia para máxima performance em corridas e treinos pesados.',
+    seller: 'Sportive Store'
+  },
+  {
+    id: '9',
+    title: 'Monitor de Bebê Digital com Vídeo Noturno e Áudio Bidirecional',
+    price: 329.00,
+    originalPrice: 480.00,
+    installments: 10,
+    imageUrl: 'https://images.unsplash.com/photo-1555252333-9f8e92e65ee9?w=600&q=80',
+    shipping: 'full',
+    rating: 4.9,
+    reviewsCount: 340,
+    category: 'Bebês',
+    description: 'Fique sempre perto do seu pequeno com imagens nítidas e som de alta fidelidade.',
+    seller: 'BabySafe Store'
+  },
+  {
+    id: '10',
+    title: 'Drone Explorer 4K com GPS e Estabilização Inteligente',
+    price: 1299.90,
+    originalPrice: 1800.00,
+    installments: 12,
+    imageUrl: 'https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=600&q=80',
+    shipping: 'full',
+    rating: 4.9,
+    reviewsCount: 45,
+    category: 'Tecnologia',
+    description: 'Imagens aéreas espetaculares em 4K. Voo estável e retorno automático ao ponto de partida.',
+    seller: 'SkyView Pro'
+  },
+  {
+    id: '20',
+    title: 'Relógio de Pulso Automático Masculino Torres Dial',
+    price: 599.00,
+    installments: 10,
+    imageUrl: 'https://images.unsplash.com/photo-1524592091214-8c97af7c4a17?w=600&q=80',
+    shipping: 'full',
+    rating: 4.8,
+    reviewsCount: 78,
+    category: 'Relógios',
+    description: 'Elegância e precisão mecânica. Resistente à água e com vidro de safira.',
+    seller: 'WatchMaster'
+  }
+];
+
+export const CATEGORIES: Category[] = [
+  { id: '1', name: 'Tecnologia', icon: '💻' },
+  { id: '2', name: 'Eletrodomésticos', icon: '🧊' },
+  { id: '3', name: 'Gamer', icon: '🎮' },
+  { id: '4', name: 'Casa', icon: '🏠' },
+  { id: '5', name: 'Áudio', icon: '🎧' },
+  { id: '6', name: 'Moda', icon: '👕' },
+  { id: '7', name: 'Beleza', icon: '💄' },
+  { id: '8', name: 'Ferramentas', icon: '🛠️' },
+  { id: '12', name: 'Pet Shop', icon: '🐾' },
+  { id: '18', name: 'Relógios', icon: '⌚' }
+];

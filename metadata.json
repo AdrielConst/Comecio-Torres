@@ -1,0 +1,7 @@
+{
+  "name": "Comercial Torres - Dropshipping Hub",
+  "description": "Uma plataforma de e-commerce inspirada no Mercado Livre, otimizada para dropshipping, com identidade visual em tons de azul e integração com Gemini para descrições automáticas de produtos.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
